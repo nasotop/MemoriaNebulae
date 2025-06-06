@@ -13,20 +13,170 @@
 		/>
 	</head>
 	<body>
-		<div class="container-fluid vh-100 justify-content-center">
+		<div class="container-fluid vh-100 justify-content-center bg-light">
 			<div class="row w-100 h-100 m-0">
-				<div class="col-1 ">
-					<div class=" avatar mx-auto rounded-circle bg-dark">
-						<img
-							src="https://img.freepik.com/vector-premium/mascota-mago_716135-2038.jpg"
-							alt="avatar"
-							class=" rounded-circle img-fluid"
-						/>
+				<div class="col-2">
+					<div class="py-5">
+						<div class="avatar w-75 mx-auto rounded-circle bg-dark">
+							<img
+								src="https://img.freepik.com/vector-premium/mascota-mago_716135-2038.jpg"
+								alt="avatar"
+								class="rounded-circle img-fluid"
+							/>
+						</div>
 					</div>
 				</div>
 
-				<div class="col-10 "></div>
-				<div class="col-1 "></div>
+				<div class="col-10">
+					<div class="container py-5">
+						<div class="row">
+							<!-- Profile Header -->
+
+							<!-- Main Content -->
+							<div class="col-12">
+								<div class="card border-0 shadow-sm">
+									<div class="card-body p-0">
+										<div class="row g-0">
+											<!-- Sidebar -->
+											<div class="col-lg-3 border-end">
+												<div class="p-4 h-100 d-flex align-content-between flex-wrap " >
+													<div class="nav w-100  flex-column nav-pills" role="tablist">
+														<a
+															class="nav-link active"
+															data-bs-toggle="tab"
+															data-bs-target="#personal_information"
+															><i class="fas fa-user me-2"></i>Informacion
+															Personal</a
+														>
+														<a
+															class="nav-link"
+															data-bs-toggle="tab"
+															data-bs-target="#security_account"
+															><i class="fas fa-lock me-2"></i>Seguridad</a
+														>
+													</div>
+													<div class="w-100 ">
+														<a href="index.html" class="btn btn-primary d-block ">Volver</a>
+													</div>
+												</div>
+											</div>
+
+											<div class="tab-content col-lg-9">
+												<div
+													class="tab-pane fade show active"
+													role="tabpanel"
+													id="personal_information"
+												>
+													<div class="p-4">
+														<!-- Personal Information -->
+														<div class="mb-4">
+															<h5 class="mb-4">Informacion Personal</h5>
+															<form action="">
+																<div class="row g-3">
+																	<div class="col-md-6">
+																		<label class="form-label">Nombres</label>
+																		<input
+																			type="text"
+																			class="form-control"
+																			value="Alex"
+																		/>
+																	</div>
+																	<div class="col-md-6">
+																		<label class="form-label">Apellidos</label>
+																		<input
+																			type="text"
+																			class="form-control"
+																			value="Johnson"
+																		/>
+																	</div>
+																	<div class="col-md-6">
+																		<label class="form-label"
+																			>Correo Electronico</label
+																		>
+																		<input
+																			type="email"
+																			class="form-control"
+																			value="alex.johnson@example.com"
+																		/>
+																	</div>
+
+																	<div class="col-12">
+																		<label class="form-label"
+																			>Describete!</label
+																		>
+																		<textarea class="form-control" rows="4">
+																		</textarea>
+																	</div>
+																	<div class="col-md-12 d-flex justify-content-end">
+																		<button class="btn btn-primary">
+																			Guardar cambios
+																		</button>
+																	</div>
+																</div>
+															</form>
+														</div>
+													</div>
+												</div>
+												<div
+													class="tab-pane fade"
+													role="tabpanel"
+													id="security_account"
+												>
+													<div class="p-4">
+														<!-- Personal Information -->
+														<div class="mb-4">
+															<h5 class="mb-4">Seguridad</h5>
+															<form action="">
+																<div class="row g-3">
+																	<div class="col-md-6">
+																		<label class="form-label">Contraseña</label>
+																		<input
+																			type="password"
+																			class="form-control"
+																			value="aaaaaa"
+																			disabled
+																		/>
+																	</div>
+																	<div class="col-md-6">
+																		<label class="form-label"
+																			>Repita contraseña</label
+																		>
+																		<input
+																			type="password"
+																			class="form-control"
+																			disabled
+																		/>
+																	</div>
+																	<div class="col-md-12">
+																		<input
+																			type="checkbox"
+																			name="change_password"
+																			id="change_password"
+																		/>
+																		<label for="change_password"
+																			>¿Quieres cambiar tu contraseña?</label
+																		>
+																	</div>
+																	<div
+																		class="col-md-12 d-flex justify-content-end"
+																	>
+																		<button class="btn btn-primary">
+																			Cambiar contraseña
+																		</button>
+																	</div>
+																</div>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
