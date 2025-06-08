@@ -1,172 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Memoria Nebulae - Inicio</title>
 
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
-			crossorigin="anonymous"
-		/>
-	</head>
-	<body>
-		<div class="container-fluid vh-100 justify-content-center bg-light">
-			<div class="row w-100 h-100 m-0">
-				<div class="col-2">
-					<div class="py-5">
-						<div class="avatar w-75 mx-auto rounded-circle bg-dark">
-							<img
-								src="https://img.freepik.com/vector-premium/mascota-mago_716135-2038.jpg"
-								alt="avatar"
-								class="rounded-circle img-fluid"
-							/>
-						</div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Memoria Nebulae - Inicio</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+</head>
+
+<body>
+	<div class="container-fluid vh-100 justify-content-center bg-light">
+		<div class="row w-100 h-100 m-0">
+			<div class="col-2">
+				<div class="py-5">
+					<div class="avatar w-75 mx-auto rounded-circle bg-dark">
+						<img src="https://img.freepik.com/vector-premium/mascota-mago_716135-2038.jpg" alt="avatar"
+							class="rounded-circle img-fluid" />
 					</div>
 				</div>
+			</div>
 
-				<div class="col-10">
-					<div class="container py-5">
-						<div class="row">
-							<!-- Profile Header -->
+			<div class="col-10">
+				<div class="container py-5">
+					<div class="row">
+						<!-- Profile Header -->
 
-							<!-- Main Content -->
-							<div class="col-12">
-								<div class="card border-0 shadow-sm">
-									<div class="card-body p-0">
-										<div class="row g-0">
-											<!-- Sidebar -->
-											<div class="col-lg-3 border-end">
-												<div class="p-4 h-100 d-flex align-content-between flex-wrap " >
-													<div class="nav w-100  flex-column nav-pills" role="tablist">
-														<a
-															class="nav-link active"
-															data-bs-toggle="tab"
-															data-bs-target="#personal_information"
-															><i class="fas fa-user me-2"></i>Informacion
-															Personal</a
-														>
-														<a
-															class="nav-link"
-															data-bs-toggle="tab"
-															data-bs-target="#security_account"
-															><i class="fas fa-lock me-2"></i>Seguridad</a
-														>
-													</div>
-													<div class="w-100 ">
-														<a href="index.html" class="btn btn-primary d-block ">Volver</a>
+						<!-- Main Content -->
+						<div class="col-12">
+							<div class="card border-0 shadow-sm">
+								<div class="card-body p-0">
+									<div class="row g-0">
+										<!-- Sidebar -->
+										<div class="col-lg-3 border-end">
+											<div class="p-4 h-100 d-flex align-content-between flex-wrap ">
+												<div class="nav w-100  flex-column nav-pills" role="tablist">
+													<a class="nav-link active" data-bs-toggle="tab"
+														data-bs-target="#personal_information"><i
+															class="fas fa-user me-2"></i>Informacion
+														Personal</a>
+													<a class="nav-link" data-bs-toggle="tab"
+														data-bs-target="#security_account"><i
+															class="fas fa-lock me-2"></i>Seguridad</a>
+												</div>
+												<div class="w-100 mt-md-3 ">
+													<a href="index.html" class="btn btn-primary d-block ">Volver</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="tab-content col-lg-9">
+											<div class="tab-pane fade show active" role="tabpanel"
+												id="personal_information">
+												<div class="p-4">
+													<!-- Personal Information -->
+													<div class="mb-4">
+														<h5 class="mb-4">Informacion Personal</h5>
+														<form id="profile_personal_info_form" action="">
+															<div class="row g-3">
+																<div class="col-md-6">
+																	<label for="profile_name" class="form-label">Nombres</label>
+																	<input id="profile_name" name="profile_name" type="text" class="form-control" />
+																</div>
+																<div class="col-md-6">
+																	<label for="profile_last_name" class="form-label">Apellidos</label>
+																	<input id="profile_last_name" name="profile_last_name" type="text" class="form-control" />
+																</div>
+																<div class="col-md-12">
+																	<label for="profile_username" class="form-label">Nombre de usuario</label>
+																	<input id="profile_username" name="profile_username" type="text" class="form-control" />
+																</div>
+
+																<div class="col-12">
+																	<label for="profile_bio" class="form-label">Describete!</label>
+																	<textarea id="profile_bio" name="profile_bio" class="form-control" rows="4">
+																		</textarea>
+																</div>
+																<div class="col-md-12 d-flex justify-content-end">
+																	<button id="profile_personal_info_submit" class="btn btn-primary">
+																		Guardar cambios
+																	</button>
+																</div>
+															</div>
+														</form>
 													</div>
 												</div>
 											</div>
-
-											<div class="tab-content col-lg-9">
-												<div
-													class="tab-pane fade show active"
-													role="tabpanel"
-													id="personal_information"
-												>
-													<div class="p-4">
-														<!-- Personal Information -->
-														<div class="mb-4">
-															<h5 class="mb-4">Informacion Personal</h5>
-															<form action="">
-																<div class="row g-3">
-																	<div class="col-md-6">
-																		<label class="form-label">Nombres</label>
-																		<input
-																			type="text"
-																			class="form-control"
-																			value="Alex"
-																		/>
-																	</div>
-																	<div class="col-md-6">
-																		<label class="form-label">Apellidos</label>
-																		<input
-																			type="text"
-																			class="form-control"
-																			value="Johnson"
-																		/>
-																	</div>
-																	<div class="col-md-6">
-																		<label class="form-label"
-																			>Correo Electronico</label
-																		>
-																		<input
-																			type="email"
-																			class="form-control"
-																			value="alex.johnson@example.com"
-																		/>
-																	</div>
-
-																	<div class="col-12">
-																		<label class="form-label"
-																			>Describete!</label
-																		>
-																		<textarea class="form-control" rows="4">
-																		</textarea>
-																	</div>
-																	<div class="col-md-12 d-flex justify-content-end">
-																		<button class="btn btn-primary">
-																			Guardar cambios
-																		</button>
-																	</div>
+											<div class="tab-pane fade" role="tabpanel" id="security_account">
+												<div class="p-4">
+													<!-- Personal Information -->
+													<div class="mb-4">
+														<h5 class="mb-4">Seguridad</h5>
+														<form id="profile_security_form" action="">
+															<div class="row g-3">
+																<div class="col-md-12">
+																	<label for="profile_mail" class="form-label">Correo Electronico</label>
+																	<input id="profile_mail" name="profile_mail" type="email" class="form-control" />
 																</div>
-															</form>
-														</div>
-													</div>
-												</div>
-												<div
-													class="tab-pane fade"
-													role="tabpanel"
-													id="security_account"
-												>
-													<div class="p-4">
-														<!-- Personal Information -->
-														<div class="mb-4">
-															<h5 class="mb-4">Seguridad</h5>
-															<form action="">
-																<div class="row g-3">
-																	<div class="col-md-6">
-																		<label class="form-label">Contraseña</label>
-																		<input
-																			type="password"
-																			class="form-control"
-																			value="aaaaaa"
-																			disabled
-																		/>
-																	</div>
-																	<div class="col-md-6">
-																		<label class="form-label"
-																			>Repita contraseña</label
-																		>
-																		<input
-																			type="password"
-																			class="form-control"
-																			disabled
-																		/>
-																	</div>
-																	<div class="col-md-12">
-																		<input
-																			type="checkbox"
-																			name="change_password"
-																			id="change_password"
-																		/>
-																		<label for="change_password"
-																			>¿Quieres cambiar tu contraseña?</label
-																		>
-																	</div>
-																	<div
-																		class="col-md-12 d-flex justify-content-end"
-																	>
-																		<button class="btn btn-primary">
-																			Cambiar contraseña
-																		</button>
-																	</div>
+																<div class="col-md-6">
+																	<label for="profile_password" class="form-label">Contraseña</label>
+																	<input id="profile_password" name="profile_password" type="password" class="form-control"
+																		disabled />
 																</div>
-															</form>
-														</div>
+																<div class="col-md-6">
+																	<label for="profile_confirm_password" class="form-label">Repita contraseña</label>
+																	<input id="profile_confirm_password" name="profile_confirm_password" type="password" class="form-control"
+																		disabled />
+																</div>
+																<div class="col-md-12">
+																	<input type="checkbox" name="profile_change_password"
+																		id="profile_change_password" />
+																	<label  for="profile_change_password">¿Quieres cambiar tu
+																		contraseña?</label>
+																</div>
+																<div class="col-md-12 d-flex justify-content-end">
+																	<button class="btn btn-primary">
+																		Cambiar contraseña
+																	</button>
+																</div>
+															</div>
+														</form>
 													</div>
 												</div>
 											</div>
@@ -179,16 +133,14 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<script src="./static/js/profile.js" />
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+		integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+		crossorigin="anonymous"></script>
+</body>
 
-		<script
-			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
-			integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
-			crossorigin="anonymous"
-		></script>
-	</body>
 </html>
