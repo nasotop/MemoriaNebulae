@@ -47,17 +47,19 @@ const login = (event) => {
         window.location.href = event.target.href;
     }
 };
-
 const setValidation = (element, isValid, errorMsg) => {
-    if (isValid) {
-        element.classList.remove("is-invalid");
-        element.classList.add("is-valid");
-        element.nextElementSibling.classList.add("opacity-0");
-    } else {
-        element.classList.remove("is-valid");
-        element.classList.add("is-invalid");
-        element.nextElementSibling.classList.remove("opacity-0");
-    }
-    element.nextElementSibling.textContent = errorMsg;
-    element.focus();
-}
+	const validation_message = element.parentElement.querySelector(
+		'div[name="validation_message"]'
+	);
+	if (isValid) {
+		element.classList.remove("is-invalid");
+		element.classList.add("is-valid");
+		validation_message.classList.add("opacity-0");
+	} else {
+		element.classList.remove("is-valid");
+		element.classList.add("is-invalid");
+		validation_message.classList.remove("opacity-0");
+	}
+	validation_message.textContent = errorMsg;
+	element.focus();
+};
